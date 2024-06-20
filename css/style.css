@@ -1,0 +1,104 @@
+.item1 {
+  grid-area: hardbar;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  background-image: url(20230104700019.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item2 {
+  grid-area: menu;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  background-color: chocolate;
+}
+.item3 {
+  grid-area: main;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgrey;
+}
+/* .item4 {
+  grid-area: right;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+} */
+.item5 {
+  grid-area: footer;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "hardbar hardbar hardbar hardbar hardbar hardbar"
+    "menu main main main main main "
+    "footer footer footer footer footer footer ";
+  gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+#menu {
+  background-color: blue;
+}
+.admask {
+  /* position: absolute;*/
+  /* text-align:center*/
+  background: rgba(0, 0, 0, 0.7);
+  color: blue;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.grid-container > div,
+.grid-container > div > div {
+  display: flex;
+  align-items: center; /*上下置中/
+justify-content;/*左右置中*/
+  /*font-size:30px;*/
+}
+.hardbar ul {
+  height: 10vh;
+  position: absolute;
+  right: 5vw;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  /*line-height;80px;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hardbar li {
+  display: inline;
+  margin-right: 4vw;
+}
+.hardbar a {
+  color: aquamarine;
+  text-decoration: none;
+}
+.hardbar a:hover {
+  text-decoration: underline;
+}
